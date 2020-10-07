@@ -1,0 +1,254 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  box-sizing: border-box; }
+
+.row-content {
+  padding: 50px 0;
+  margin: 0; }
+
+.navbar-1 {
+  width: 100%;
+  padding: 25px 20px;
+  border-bottom: 1px solid #cfcfcf;
+  height: 50px; }
+  .navbar-1 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .navbar-1 ul li {
+      display: inline; }
+      .navbar-1 ul li a {
+        text-decoration: none;
+        color: #18040c;
+        font-weight: 500;
+        margin-right: 20px;
+        padding: 20px 10px; }
+      .navbar-1 ul li select {
+        border: none; }
+    .navbar-1 ul li:nth-child(6), .navbar-1 ul li:nth-child(5), .navbar-1 ul li:nth-child(4) {
+      float: right; }
+
+@media only screen and (max-width: 700px) {
+  .navbar-1 {
+    display: none; }
+  .wrap-menu-desktop {
+    position: fixed;
+    top: 0px; } }
+
+.wrap-menu-mobile {
+  display: none;
+  height: 60px; }
+
+.main-menu-wrap-mobile ul {
+  position: fixed;
+  top: 50px;
+  left: 25px;
+  height: 0;
+  overflow: hidden;
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .main-menu-wrap-mobile ul li a {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: black;
+    font-weight: 500; }
+
+.wrap-menu-desktop {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  z-index: 1100;
+  padding: 20px 15px;
+  background-color: whitesmoke; }
+  .wrap-menu-desktop .main-menu {
+    list-style: none;
+    padding: 7px 0;
+    margin: 0; }
+    .wrap-menu-desktop .main-menu li {
+      display: inline; }
+      .wrap-menu-desktop .main-menu li a {
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        padding: 5px 0;
+        margin-right: 20px; }
+  .wrap-menu-desktop .wrap-icon-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end; }
+    .wrap-menu-desktop .wrap-icon-header div {
+      flex-basis: 50px;
+      align-self: center; }
+    .wrap-menu-desktop .wrap-icon-header .menu-button {
+      display: none; }
+
+@media only screen and (max-width: 465px) {
+  .wrap-menu-mobile {
+    display: block; }
+  .wrap-menu-desktop {
+    display: none; } }
+
+.bg-1 .carousel-inner {
+  width: 100%;
+  height: 75vh; }
+  .bg-1 .carousel-inner .carousel-item {
+    width: 100%; }
+    .bg-1 .carousel-inner .carousel-item img {
+      width: 100%;
+      height: 100%;
+      position: relative; }
+
+.bg-1 .carousel-caption {
+  position: absolute;
+  top: 25%;
+  text-align: left; }
+  .bg-1 .carousel-caption h5 {
+    font-size: 2.6em;
+    text-shadow: 2px 2px 6px black; }
+  .bg-1 .carousel-caption p {
+    font-size: 1.3em;
+    text-shadow: 2px 2px 6px black; }
+  .bg-1 .carousel-caption .shopBtn {
+    border: 0;
+    border-radius: 0;
+    padding: 14px 22px;
+    color: white;
+    background-color: #fc0362;
+    font-weight: 500; }
+  .bg-1 .carousel-caption .shopBtn:hover {
+    background-color: #aa0645; }
+
+.bg-2 div {
+  overflow: hidden; }
+  .bg-2 div img {
+    height: 300px;
+    width: 100%;
+    transition: all ease-in-out 400ms; }
+  .bg-2 div img:hover {
+    transform: scale(1.1); }
+  .bg-2 div .panel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 20px;
+    color: black; }
+    .bg-2 div .panel-caption a {
+      text-decoration: none;
+      color: black;
+      font-weight: 600; }
+    .bg-2 div .panel-caption a:hover {
+      text-decoration: underline; }
+
+.bg-3 .card {
+  border-radius: 0;
+  margin-bottom: 20px;
+  box-shadow: 2px 3px 8px #c7c6c6;
+  background-color: whitesmoke; }
+  .bg-3 .card img {
+    height: 250px; }
+
+.bg-3 .clothes-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .bg-3 .clothes-menu ul li {
+    display: inline-block; }
+    .bg-3 .clothes-menu ul li a {
+      text-decoration: none;
+      color: black;
+      font-size: 1.1em;
+      font-weight: 400;
+      padding: 8px 14px;
+      transition: all ease-in-out 300ms; }
+    .bg-3 .clothes-menu ul li a:hover {
+      font-weight: 600;
+      color: #fc0362; }
+    .bg-3 .clothes-menu ul li a:focus {
+      color: #fc0362; }
+
+.bg-4 {
+  background-attachment: fixed;
+  height: 75vh;
+  overflow: hidden; }
+  .bg-4 div .text {
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    padding-left: 20px;
+    color: white;
+    line-height: 30px;
+    text-shadow: 2px 3px 8px #292929; }
+    .bg-4 div .text .redbar {
+      display: block;
+      width: 50px;
+      position: relative;
+      border-top: 3px solid #fc0362; }
+    .bg-4 div .text button {
+      background-color: #fc0362;
+      color: white;
+      font-weight: 600;
+      padding: 14px 22px;
+      border-radius: 0;
+      border: none; }
+    .bg-4 div .text button:hover {
+      background-color: #aa0645; }
+
+.bg-5 .card {
+  border-radius: 0;
+  margin-bottom: 20px;
+  box-shadow: 2px 3px 8px #c7c6c6;
+  background-color: whitesmoke; }
+  .bg-5 .card img {
+    height: 250px; }
+
+.bg-6 {
+  background-color: #ffddea; }
+  .bg-6 .carousel-inner .carousel-item {
+    position: relative; }
+    .bg-6 .carousel-inner .carousel-item p {
+      text-align: center;
+      width: 50%;
+      height: 100px;
+      border-radius: 50%;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%); }
+    .bg-6 .carousel-inner .carousel-item img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-bottom: 20px;
+      box-shadow: 2px 2px 6px gray; }
+    .bg-6 .carousel-inner .carousel-item h4 {
+      font-size: 1.6em;
+      font-weight: 600;
+      color: #fc0362;
+      text-shadow: 1px 1px 6px gray; }
+
+.bg-7 {
+  padding-left: 50px;
+  padding-right: 50px; }
+  .bg-7 h3 {
+    color: black; }
+  .bg-7 div {
+    border-right: 1px solid black;
+    color: gray; }
+    .bg-7 div .icon {
+      font-size: 2.6em; }
+
+.bg-8 {
+  background-color: #fc0362;
+  color: white; }
+  .bg-8 input {
+    border: none;
+    border-radius: 0; }
